@@ -1,0 +1,28 @@
+int a = 0;
+改成
+int *p = new int;
+*p = 0;
+new 完之後一定要delete
+不然會一直佔著記憶體
+
+宣告int、任何型態 
+*創建一個指標  & call by references 參考 必須宣告在參數 放在括號裡 接收東西的 值
+
+存取上 *取值  &取地址
+
+void swap(int *a, int *b) {
+  int temp = *a;
+  *a = *b;
+  *b = temp;
+}
+
+ void solve() {
+
+  int x = 3, y = 4;
+  swap(&x, &y);
+  cout << x << " " << y << endl;
+}
+
+int x; //declar x
+  int *p = &x; //declar a pointer point to x's address
+  int y = *p; //declare y as the value of point p pointing to , its is x's value.
