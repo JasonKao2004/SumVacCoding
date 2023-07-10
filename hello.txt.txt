@@ -1,1 +1,15 @@
-hellohello
+確認狀態
+git status
+
+
+加入
+git add .
+
+
+
+提交
+git commit -m " "
+
+
+推送到遠端處存
+git push -u origin main
