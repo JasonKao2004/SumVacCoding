@@ -1,3 +1,6 @@
+移到作業資料夾
+cd D:\codingtest
+
 確認狀態
 git status
 
