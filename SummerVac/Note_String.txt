@@ -1,0 +1,32 @@
+ios::sync_with_stdio(0);
+  cin.tie(0);
+幻枲
+#include <iomanip>
+幻枲
+麻幻枲
+double d = 3.141512345456;
+  cout << fixed << setprecision(10) << d << endl;
+幻枲
+麻幻枲
+# include <sstream>
+inline void solve() {
+
+    
+    string s;
+    getline(cin, s);
+    // "abc def ghi" -> ["abc", "def", "ghi"]
+    stringstream ss(s);
+    string tmp;
+    vector<string> v;
+    while(ss >> tmp){
+        v.push_back(tmp);
+    }
+
+}
+幻枲
+麻幻枲
+string s;
+  char c[100];
+  sprintf(c, "%d", 123); // 123 -> "123"
+  s = c;
+  int t = stoi(s); // "123" -> 123
