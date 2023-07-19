@@ -2,6 +2,8 @@
 #include <iostream>
 #include <string>
 #include <math.h>
+   
+   
 using namespace std;
 //i want to use "getline" but forget ,need to go back to check  
 string s ;
