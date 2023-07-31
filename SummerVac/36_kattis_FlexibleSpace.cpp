@@ -6,13 +6,15 @@ vector <bool> ans ( 101 ) ;
 int main(){
     int n = 0  , t = 0 ;
     cin >> n >> t ;
-    for ( int i = 1 ; i <= t ; i ++ ){
+    for ( int i = 1 ; i <= t ; i ++ ){   //inpjut
         cin >> w [ i ] ;
         w [ i + 1 ] = n ;
         //cout << "debug w [" << i  << "] = " << w [i] << endl ;  
     }
-    for ( int i = 0 ; i <= (t + 1) ; i++ ){
-        for ( int j = 0 ; j <= i ; j++){
+    //cout << " t =" << t << endl ;
+    for ( int i = t + 1 ; i > 0 ; i-- ){
+        //cout << " i =" << i << endl ;
+        for ( int j = 0 ; j < i ; j++){
         int temp = 0 ;
         temp = w [ i ] - w [ j ] ;
         //cout << "debug i = "<< i << "  j = " << j << " temp = " << temp << endl;
