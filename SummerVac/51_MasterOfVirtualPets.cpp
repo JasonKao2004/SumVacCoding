@@ -7,8 +7,11 @@ int main(){
 
     for ( int num = 1 ; num <= pet ; num++ ){
         cin >> curCP >> curIV ;
-        
-        for /* adding CP */ ( int grow = addinglev ; grow > 0 ; grow-- , curIV++ ){
+        if ( curIV > 39 ) curCP += addinglev * 100 ;
+        else if ( curIV > 29 ) curCP += addinglev * 50 ;
+        else curCP += addinglev * 10 ;
+        /*
+        for /* adding CP  ( int grow = addinglev ; grow > 0 ; grow-- , curIV++ ){
             cout << " grow = " << grow << endl ;
 
             if ( curIV > 39 ) {
@@ -24,6 +27,7 @@ int main(){
                 cout << "lev = [ " << curIV << " ] , CP + 10 , CP = [ " << curCP << " ]"<< endl ;
             }
         }
+        */
         if ( curCP > bestCP ) bestCP = curCP , bestPet = num ;
 
     }
