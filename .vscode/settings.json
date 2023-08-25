@@ -7,6 +7,8 @@
         "bitset": "cpp",
         "initializer_list": "cpp",
         "regex": "cpp",
-        "utility": "cpp"
+        "utility": "cpp",
+        "*.tcc": "cpp",
+        "iomanip": "cpp"
     }
 }
