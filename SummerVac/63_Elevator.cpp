@@ -8,11 +8,11 @@ int main(){
         cin >> newfloor ;
         if ( newfloor > oldfloor ){
             ans += ( newfloor - oldfloor ) * up ;
-            cout << "up [" << newfloor - oldfloor << "]" << endl ;
+           // cout << "up [" << newfloor - oldfloor << "]" << endl ;
         }
         else {
             ans += ( oldfloor - newfloor ) * down ;
-            cout << "down [" << oldfloor - newfloor << "]" << endl ; 
+           // cout << "down [" << oldfloor - newfloor << "]" << endl ; 
         }
         oldfloor = newfloor ;
     }
