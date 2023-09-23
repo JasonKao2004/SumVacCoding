@@ -7,7 +7,7 @@ char temp;
 
 int main(){
 
-cin>>s;
+    cin>>s;
 
     for(int i=0; i<=s.length()-1 ; i++){
         temp=s[i]-7;
